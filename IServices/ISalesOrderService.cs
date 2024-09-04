@@ -9,6 +9,8 @@ namespace SalesOrderManagementSystem.IServices
         Task<SalesOrder> GetOrderById(int orderID);
         Task<List<Customer>> GetCustomers();
         Task<bool> CreateNewOrders(SalesOrder salesOrder);
+        Task<bool> UpdateOrders(SalesOrder salesOrder);
+        Task<bool> DeleteOrders(int salesOrderId);
 
     }
 }
